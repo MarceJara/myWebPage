@@ -17,23 +17,30 @@
   <header class="header">
     <div class="MainNavBar">
       <span class="Logo"><a href="index.html">Marcelo Jara</a></span>
-      <nav class="RightNavBar">
-        <ul>
-          <li><a href="Proyectos.html">Proyectos</a></li>
-          <li><a href="Patreon.html">Patreon</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      
       <div class="menu-icon">
           <i class="fa fa-bars fa-2x"></i>
       </div>
-    
+      <nav class="RightNavBar">
+          <ul>
+            <li><a href="Proyectos.html">Proyectos</a></li>
+            <li><a href="Patreon.html">Patreon</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav> 
     </div>
+    <nav class="RightNavBarD">
+      <ul class="Desplegable">
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Patreon.html">Patreon</a></li>
+        <li style="padding-bottom: 25px;"><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav> 
 
     <div class="container"></div>
       <div class="main-text-img">
         <h1>MARCELO JARA</h1>
-        <h3>Autodidacta, curioso e inquieto por el aprendizaje. Compartiendo el proceso con ustedes en Youtube.</h3>
+        <h3>Autodidacta, curioso e inquieto por el aprendizaje. Compartiendo el proceso con ustedes en <a class="linkYT" href="https://www.youtube.com/channel/UC-yh00putZ8ZKbU6_oWSB5Q?sub_confirmation=1">Youtube</a>.</h3>
       </div>
 
   </header>
@@ -42,8 +49,10 @@
 
 
 <div class="my_work">
-  <h3>Mi trabajo</h3>
-  <p>La curiosidad como eje vivencial me parece una idea fenomenal. Trato de aprender un montón de cosas por mi cuenta. Primero, comencé con la programación; luego, con la electónica y, al final, no hay fronteras, seguir aprendiendo. Quiero compartir con ustedes todo este proceso y que me acompañen a conseguir grandes cosas. </p>
+  <div>
+    <h3>Lo que hago</h3>
+    <p>Uso la curiosidad como eje de mi aprendizaje. "Sin límites, solo aprender". Además, quiero compartir con ustedes todo este proceso y que me acompañen a conseguir grandes cosas. </p>
+  </div>
 </div>
 
 <div class="Aprendizaje_2019">
@@ -54,9 +63,21 @@
 
 
 <div class="footer">
-  <div></div>
+  <div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="https://www.facebook.com/marceloantonio.jarafalconi.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="https://github.com/MarceJara" target="_blank"><i class="fa fa-github"></i></a></li>
+                  <li><a class="linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr>
   <p>Todos los derechos reservados.</p>
-</div>
+  </div>
 
 
 
@@ -67,7 +88,11 @@
 
 <script type="text/javascript">
     
-
+    $(document).ready(() => {
+       $(".menu-icon").on("click", () => {
+      $('ul.Desplegable').toggleClass("MenuDesp");
+     });
+    }); 
 
 
      $(Window).on("scroll", () => {

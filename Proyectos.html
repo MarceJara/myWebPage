@@ -13,31 +13,65 @@
 <body>
 
 <div class="PartePrincipal">
+
   <header class="header">
     <div class="MainNavBar">
       <span class="Logo"><a href="index.html">Marcelo Jara</a></span>
-      <nav class="RightNavBar">
-        <ul>
-          <li><a href="Proyectos.html">Proyectos</a></li>
-          <li><a href="Patreon.html">Patreon</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+      
       <div class="menu-icon">
           <i class="fa fa-bars fa-2x"></i>
       </div>
+      <nav class="RightNavBar">
+          <ul>
+            <li><a href="Proyectos.html">Proyectos</a></li>
+            <li><a href="Patreon.html">Patreon</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
+        </nav> 
     </div>
+    <nav class="RightNavBarD">
+      <ul class="Desplegable">
+        <li><a href="Proyectos.html">Proyectos</a></li>
+        <li><a href="Patreon.html">Patreon</a></li>
+        <li style="padding-bottom: 25px;"><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav> 
   </header>
-</div>
 
-<div class="footer">
-  <div></div>
-  <p>Todos los derechos reservados.</p>
 </div>
+<div class="footer">
+  <div>
+      <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                  <li><a class="facebook" href="https://www.facebook.com/marceloantonio.jarafalconi.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="https://github.com/MarceJara" target="_blank"><i class="fa fa-github"></i></a></li>
+                  <li><a class="linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <p>Todos los derechos reservados.</p>
+  </div>
+
+
 
   <div class="clear"></div>
 
+
+
+
 <script type="text/javascript">
+    
+    $(document).ready(() => {
+       $(".menu-icon").on("click", () => {
+      $('ul.Desplegable').toggleClass("MenuDesp");
+     });
+    }); 
+
+
      $(Window).on("scroll", () => {
             if ($(window).scrollTop()) {
                 $('div.MainNavBar').addClass('black');
@@ -47,5 +81,6 @@
 
         })
 </script>
-</body>
+  </body>
 </html>
+
