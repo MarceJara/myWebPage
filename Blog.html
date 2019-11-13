@@ -8,18 +8,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
   <script src="https://kit.fontawesome.com/453499f7aa.js"></script>
+  <script src="../myWebPage/Scripts/Blog.js"></script>
+  <script src="../Scripts/FirstBlog.js"></script>
+
   <title>Marcelo Jara</title>
 </head>
 
 <body>
   <div class="PartePrincipal">
-    <header class="header PatreonHead">
+    <header class="header bloghead">
       <div class="MainNavBar">
         <span class="Logo"><a href="index.html">Marcelo Jara</a></span>
 
         <div class="menu-icon">
           <i class="fa fa-bars fa-2x"></i>
         </div>
+
         <nav class="RightNavBar">
           <ul>
             <li><a href="Proyectos.html">Proyectos</a></li>
@@ -29,6 +33,7 @@
           </ul>
         </nav>
       </div>
+
       <nav class="RightNavBarD">
         <ul class="Desplegable">
           <li><a href="Proyectos.html">Proyectos</a></li>
@@ -39,16 +44,44 @@
           </li>
         </ul>
       </nav>
+      <!-- Aqui puedes añadir títulos-->
+
+      <div class="blogtitle">
+        <h1 class="titleB">Blogs</h1>
+      </div>
+
     </header>
+
+
+
   </div>
 
+  <!--Esta división poseerá los encabezados de cada artículo-->
+  <div class="ContainerBlog">
+    <!--Plantilla para añadir encabezados de nuevos artículos
 
-  <div class="P1">
-    <p>Próximamente</p>
+    div class="Encabezado">
+      <h1>Aquí va el título del artículo</h1>
+      <h5>Aqui van las primeras líneas del artículo para poder leerlo un poco y asi atraer al público<a href="AquíVaElPath">...</a> </h5>
+    </div>
+
+    -->
+
+    <div class="Encabezado">
+      <h1><a href="BlogsFolder/FirstBlog.html">Transformando el mañana</a></h1>
+      <h5 id="PrimPal">El último sábado tuve la oportunidad de ser parte del TEDxUTEC. Aquellos que no están
+        familiarizados con este tipo de
+        eventos les explico brevemente en qué consiste. La organización TED difunde ideas valiosas a comunidades
+        locales
+        alrededor del mundo, mediante expositores (speakers) que comparten sus experiencias, descubrimientos y
+        conocimientos.
+        Este fin de semana en la Universidad de Ingeniería y Tecnología ubicada en el distrito de Barranco se
+        organizó un evento
+        de esta índole con increíb<a href="BlogsFolder/FirstBlog.html"> ...</a></h5>
+    </div>
+
+    <!-- Termina sección para añadir encabezados-->
   </div>
-
-
-
 
   <div class="footer">
     <div>
@@ -84,21 +117,6 @@
 
   <div class="clear"></div>
 
-  <script type="text/javascript">
-    $(document).ready(() => {
-      $(".menu-icon").on("click", () => {
-        $("ul.Desplegable").toggleClass("MenuDesp");
-      });
-    });
-
-    $(Window).on("scroll", () => {
-      if ($(window).scrollTop()) {
-        $("div.MainNavBar").addClass("black");
-      } else {
-        $("div.MainNavBar").removeClass("black");
-      }
-    });
-  </script>
 </body>
 
 </html>

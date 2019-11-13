@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="Styles/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="Styles/styles.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-  <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  <script src="https://kit.fontawesome.com/453499f7aa.js"></script>
   <title>Marcelo Jara</title>
 </head>
 
 <body>
+  <div class="PartePrincipal">
+    <header class="header">
+      <div class="MainNavBar">
+        <span class="Logo"><a href="index.html">Marcelo Jara</a></span>
 
-<div class="PartePrincipal">
-
-  <header class="header">
-    <div class="MainNavBar">
-      <span class="Logo"><a href="index.html">Marcelo Jara</a></span>
-      
-      <div class="menu-icon">
+        <div class="menu-icon">
           <i class="fa fa-bars fa-2x"></i>
-      </div>
-      <nav class="RightNavBar">
+        </div>
+        <nav class="RightNavBar">
           <ul>
             <li><a href="Proyectos.html">Proyectos</a></li>
             <li><a href="Patreon.html">Patreon</a></li>
+            <li><a href="Blog.html">Blog</a></li>
             <li><a href="Contacto.html">Contacto</a></li>
           </ul>
-        </nav> 
-    </div>
-    <nav class="RightNavBarD">
-      <ul class="Desplegable">
-        <li><a href="Proyectos.html">Proyectos</a></li>
-        <li><a href="Patreon.html">Patreon</a></li>
-        <li style="padding-bottom: 25px;"><a href="Contacto.html">Contacto</a></li>
-      </ul>
-    </nav> 
-  </header>
-
-</div>
-<div class="container"></div>
-      <div class="main-text-contacto">
-        <h1>Escribeme un correo a:</h1>
-        <h3>mjarafalconi@gmail.com</h3>
+        </nav>
       </div>
-<div class="footer">
-  <div>
+      <nav class="RightNavBarD">
+        <ul class="Desplegable">
+          <li><a href="Proyectos.html">Proyectos</a></li>
+          <li><a href="Patreon.html">Patreon</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li style="padding-bottom: 25px;">
+            <a href="Contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="container"></div>
+  <div class="main-text-contacto">
+    <h1>Escribeme un correo a:</h1>
+    <h3>mjarafalconi@gmail.com</h3>
+  </div>
+  <div class="footer">
+    <div>
       <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                  <li><a class="facebook" href="https://www.facebook.com/marceloantonio.jarafalconi.5" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                  <li><a class="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a class="dribbble" href="https://github.com/MarceJara" target="_blank"><i class="fa fa-github"></i></a></li>
-                  <li><a class="linkedin" href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="youtube" href="https://www.youtube.com/channel/UC-yh00putZ8ZKbU6_oWSB5Q?sub_confirmation=1"
+                target="_blank"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a class="facebook" href="https://www.facebook.com/marceloantonio.jarafalconi.5" target="_blank"><i
+                  class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a class="instagram" href="https://www.instagram.com/marcelojaraflcn/?hl=es-la" target="_blank"><i
+                  class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a class="github" href="https://github.com/MarceJara" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+              <a class="patreon" href="https://www.patreon.com/MarceloJara?alert=2" target="_blank"><i
+                  class="fab fa-patreon"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </div>
+    <hr />
+    <p>Todos los derechos reservados.</p>
   </div>
-  <hr>
-  <p>Todos los derechos reservados.</p>
-  </div>
-
-
 
   <div class="clear"></div>
 
-
-
-
-<script type="text/javascript">
-    
+  <script type="text/javascript">
     $(document).ready(() => {
-       $(".menu-icon").on("click", () => {
-      $('ul.Desplegable').toggleClass("MenuDesp");
-     });
-    }); 
+      $(".menu-icon").on("click", () => {
+        $("ul.Desplegable").toggleClass("MenuDesp");
+      });
+    });
 
+    $(Window).on("scroll", () => {
+      if ($(window).scrollTop()) {
+        $("div.MainNavBar").addClass("black");
+      } else {
+        $("div.MainNavBar").removeClass("black");
+      }
+    });
+  </script>
+</body>
 
-     $(Window).on("scroll", () => {
-            if ($(window).scrollTop()) {
-                $('div.MainNavBar').addClass('black');
-            } else {
-                $('div.MainNavBar').removeClass('black');
-            }
-
-        })
-</script>
-  </body>
 </html>
-
