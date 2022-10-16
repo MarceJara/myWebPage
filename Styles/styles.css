@@ -406,7 +406,7 @@ padding: 20px 20px;
   .MainNavBar {
     padding: 25px;
     z-index: 2;
-    background-color: rgba(22, 20, 41, 1);
+    background-color: rgb(83, 45, 210, 1);/*rgba(22, 20, 41, 1);*/
   }
 
   .Desplegable {
