@@ -121,14 +121,14 @@ a:-webkit-any-link {
   position: absolute;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  color: #ecf0f1;
+  color: rgb(226, 227, 219,1);/*#ecf0f1;*/
   z-index: 0;
 }
 
 .main-text-img h1 {
   text-align: left;
-  letter-spacing: 18px;
-  font-weight: 500;
+  letter-spacing: 10px;
+  font-weight: 700;
   text-shadow: 2px 1px rgba(22, 20, 41, 0.2);
 }
 
