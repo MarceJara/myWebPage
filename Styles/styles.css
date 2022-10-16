@@ -158,7 +158,7 @@ a:-webkit-any-link {
   color: #fff;
   box-sizing: border-box;
   padding: 60px 60px;
-  background-color: #161429;
+  background-color: rgb(83, 45, 210, 1);/*#161429;*/
   margin-bottom: 120px;
 }
 
